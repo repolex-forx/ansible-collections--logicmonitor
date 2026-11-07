@@ -1,0 +1,11 @@
+{
+  "org": "ansible-collections",
+  "repo": "logicmonitor",
+  "versions": [
+    {
+      "commit": "fd569007bc0f2c83a6e503b13bc6ed3839c58140",
+      "tag": "",
+      "parsed_at": "2026-11-07T17:33:32.300463+00:00"
+    }
+  ]
+}

@@ -1,1 +1,133 @@
-Initializing
+# Repolex Knowledge Graph of ansible-collections/logicmonitor
+
+RDF knowledge graph data for [ansible-collections/logicmonitor](https://github.com/ansible-collections/logicmonitor), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download ansible-collections/logicmonitor
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── fd569007bc0f2c83a6e503b13bc6ed3839c58140
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── fd569007bc0f2c83a6e503b13bc6ed3839c58140
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 05e679dc5fdf6f0d3c489160cba9d140f0e7e08e.nq.gz
+│   ├── 06cc9c98f74109b4b3d71ffcbca8eb911e97b847.nq.gz
+│   ├── 0c407691b4aebf208eca41e45e8665b07c8235cf.nq.gz
+│   ├── 0cdb4a727537f59cd0a1943d43db33610c790c77.nq.gz
+│   ├── 0e3965aa66b67d80b5dbc364f5ec09f6acd0ab55.nq.gz
+│   ├── 0e435aca33e2c6897fdbb744ef79842b16c101da.nq.gz
+│   ├── 0f1b970e4314c4973f89b01b25eed57f77046d4a.nq.gz
+│   ├── 134a888a35fa7dd43b1bb738fee9d62f2295db09.nq.gz
+│   ├── 2e537560b611f4474e8f412930f3015df0cf643a.nq.gz
+│   ├── 3189b1363a45b3574c383acbcb4b5de09f4b04bd.nq.gz
+│   ├── 37df77c692fc4e054d939e6236b67ec10978539b.nq.gz
+│   ├── 42c397e8d8869dcd479e8385c7428485be338705.nq.gz
+│   ├── 4a818f3a12f62eefbdb1211c924694de314465d9.nq.gz
+│   ├── 56e44fbf11af95a585f1ead8b7d4694a2be19ee4.nq.gz
+│   ├── 5b144f68d8a809475152d32705afd8d9a3258dbc.nq.gz
+│   ├── 5b772bf8340cd603c12e96f07400e4f603b23e35.nq.gz
+│   ├── 5c7e165d3096316c673252cc1c649cd7c4d97797.nq.gz
+│   ├── 5d37892de905f46000b2e86f22397b94b0e3a968.nq.gz
+│   ├── 6135c28ae14c0525567aba4bc51651b5f7dbe13b.nq.gz
+│   ├── 61d17ec12b2255241ed548d3f82400ff52fa196f.nq.gz
+│   ├── 667f03f8a23544119d5ca381a8b3a39b6a18f13a.nq.gz
+│   ├── 692e175fa06be7b670839cb017008a5e74bc16a1.nq.gz
+│   ├── 6e2ffa8e944791852eed691e592a7d5bbc25b2f2.nq.gz
+│   ├── 72debd9318bb4f060cb4af8abbffb0536bb14b95.nq.gz
+│   ├── 7732188fc39411e90938d279a77c404c0a5111e4.nq.gz
+│   ├── 7f676a10e8c1428b5874fca57fa8463ac8359670.nq.gz
+│   ├── 8ba37e54086971e383f08a536edf8b6818a0c361.nq.gz
+│   ├── 8c63291e2536bb53628de430428c9c1db923c9a3.nq.gz
+│   ├── 92784af31158928d3738880e19d95c67ad345788.nq.gz
+│   ├── 971bcea92c352cff6ec20c0d4fe80c3569c66657.nq.gz
+│   ├── a1a44b6d86967d4c77773443ee373421a31fb403.nq.gz
+│   ├── ac739d04189e0e68a3c24452c0e54d62d61570b3.nq.gz
+│   ├── acd8d2ba2fff148841073a614fed32afbef561fa.nq.gz
+│   ├── b16e884f401549d18978d116b312b373d5c07b61.nq.gz
+│   ├── b4e97b342260ab752929adc4d797c7e6ada6ea6c.nq.gz
+│   ├── b96d6755306328e4ca0bb7a3c0a80a8792ef8e61.nq.gz
+│   ├── c011abbc694fa6fbb53fd98c5d1780b8ea3eea9f.nq.gz
+│   ├── c10f383977ee9c00e956b056dc6cf8a422a0e804.nq.gz
+│   ├── c37f845f54b11f424cd8442bc79db54ed9364782.nq.gz
+│   ├── c97045c13e9d986815de868bb88d1c9d1b3bb112.nq.gz
+│   ├── d46670969736c6c2c896826ff522eb2de1f03029.nq.gz
+│   ├── d645695673349e3947e8e5ae42332d0ac3164cd7.nq.gz
+│   ├── d661c47cc439b831ffce14333d5a9bb9faa37b66.nq.gz
+│   ├── d69ae3990d5222e42d92c69f3179e903d84c6545.nq.gz
+│   ├── d6e9c17f1555fc5510c1136aa9cdaf238ed659bf.nq.gz
+│   ├── daaca21600c146ffc634aba2ddff3d18c792f742.nq.gz
+│   ├── dbb328e845ad760f137338cb4e0a90eacd1294ab.nq.gz
+│   ├── e0197d3ce1996fd6e148e5b847cd68383b7de472.nq.gz
+│   ├── e2559138b98fcbc0612d5c3f3bbf712c9aaa272b.nq.gz
+│   ├── e5f23599bd98cfae6149df1776e9034c75636133.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── f30521fa3dcf3d8ce82c51a5584b71d0f2974b0a.nq.gz
+│   ├── f453358574ad598d57daf97da7599074a5442709.nq.gz
+│   └── fe328bcd0581b6bce8ef835953e725533273b55d.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── fd569007bc0f2c83a6e503b13bc6ed3839c58140.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 62 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[ansible-collections/logicmonitor](https://github.com/ansible-collections/logicmonitor)
+
+---
+*Parsed on 2026-11-07 by [repolex](https://repolex.ai)*
