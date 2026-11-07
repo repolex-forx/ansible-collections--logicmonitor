@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/ansible-collections/logicmonitor/commit/fd569007bc0f2c83a6e503b13bc6ed3839c58140",
       "git:hexsha": "fd569007bc0f2c83a6e503b13bc6ed3839c58140",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     }
   ]
 }
